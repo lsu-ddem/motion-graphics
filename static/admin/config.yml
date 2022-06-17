@@ -1,0 +1,793 @@
+backend:
+  name: git-gateway
+
+media_folder: "/static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  # Unit 1
+  - name: "Unit 1 - Lesson 1"
+    label: "Unit 1 - Lesson 1"
+    folder: "content/1_Unit_1/1_Lesson_1"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Order", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "Unit 1 - Lesson 2"
+    label: "Unit 1 - Lesson 2"
+    folder: "content/1_Unit_1/2_Lesson_2"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Order", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  #Projects
+  - name: "Unit 1 - Lesson 2 - Project 1"
+    label: "Unit 1 - Lesson 2 - Project 1"
+    folder: "content/1_Unit_1/2_Lesson_2/1_Project_1"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Order", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "Unit 1 - Lesson 2 - Project 2"
+    label: "Unit 1 - Lesson 2 - Project 2"
+    folder: "content/1_Unit_1/2_Lesson_2/2_Project_2"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Order", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "Unit 1 - Lesson 2 - Project 3"
+    label: "Unit 1 - Lesson 2 - Project 3"
+    folder: "content/1_Unit_1/2_Lesson_2/3_Project_3"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Order", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  #Back to lessons
+  - name: "Unit 1 - Lesson 3"
+    label: "Unit 1 - Lesson 3"
+    folder: "content/1_Unit_1/3_Lesson_3"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Order", name: "weight", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  #####
+  # Unit 2
+#   - name: "Unit 2 - Lesson 1"
+#     label: "Unit 2 - Lesson 1"
+#     folder: "content/2_Unit_2/1_Lesson_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 2 - Lesson 2"
+#     label: "Unit 2 - Lesson 2"
+#     folder: "content/2_Unit_2/2_Lesson_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Projects
+#   - name: "Unit 2 - Lesson 2 - Project 1"
+#     label: "Unit 2 - Lesson 2 - Project 1"
+#     folder: "content/2_Unit_2/2_Lesson_2/1_Project_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 2 - Lesson 2 - Project 2"
+#     label: "Unit 2 - Lesson 2 - Project 2"
+#     folder: "content/2_Unit_2/2_Lesson_2/2_Project_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Back to lessons
+#   - name: "Unit 2 - Lesson 3"
+#     label: "Unit 2 - Lesson 3"
+#     folder: "content/2_Unit_2/3_Lesson_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+# ###
+# # Unit 3
+#   - name: "Unit 3 - Lesson 1"
+#     label: "Unit 3 - Lesson 1"
+#     folder: "content/3_Unit_3/1_Lesson_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 3 - Lesson 2"
+#     label: "Unit 3 - Lesson 2"
+#     folder: "content/3_Unit_3/2_Lesson_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Projects
+#   - name: "Unit 3 - Lesson 2 - Project 1"
+#     label: "Unit 3 - Lesson 2 - Project 1"
+#     folder: "content/3_Unit_3/2_Lesson_2/1_Project_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 3 - Lesson 2 - Project 2"
+#     label: "Unit 3 - Lesson 2 - Project 2"
+#     folder: "content/3_Unit_3/2_Lesson_2/2_Project_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 3 - Lesson 2 - Project 3"
+#     label: "Unit 3 - Lesson 2 - Project 3"
+#     folder: "content/3_Unit_3/2_Lesson_2/3_Project_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 3 - Lesson 2 - Project 4"
+#     label: "Unit 3 - Lesson 2 - Project 4"
+#     folder: "content/3_Unit_3/2_Lesson_2/4_Project_4"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Back to lessons
+#   - name: "Unit 3 - Lesson 3"
+#     label: "Unit 3 - Lesson 3"
+#     folder: "content/3_Unit_3/3_Lesson_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #####
+#   # Unit 4
+#   #
+#   #####
+#   # biological engineering
+#   - name: "Unit 4 - Biological Engineering - Lesson 1"
+#     label: "Unit 4 - Biological Engineering - Lesson 1"
+#     folder: "content/4_Unit_4/biological-engineering/1_Lesson_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Biological Engineering - Lesson 2"
+#     label: "Unit 4 - Biological Engineering - Lesson 2"
+#     folder: "content/4_Unit_4/biological-engineering/2_Lesson_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Projects
+#   - name: "Unit 4 - Biological Engineering - Lesson 2 - Project 1"
+#     label: "Unit 4 - Biological Engineering - Lesson 2 - Project 1"
+#     folder: "content/4_Unit_4/biological-engineering/2_Lesson_2/1_Project_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Biological Engineering - Lesson 2 - Project 2"
+#     label: "Unit 4 - Biological Engineering - Lesson 2 - Project 2"
+#     folder: "content/4_Unit_4/biological-engineering/2_Lesson_2/2_Project_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Biological Engineering - Lesson 2 - Project 3"
+#     label: "Unit 4 - Biological Engineering - Lesson 2 - Project 3"
+#     folder: "content/4_Unit_4/biological-engineering/2_Lesson_2/3_Project_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Biological Engineering - Lesson 2 - Project 4"
+#     label: "Unit 4 - Biological Engineering - Lesson 2 - Project 4"
+#     folder: "content/4_Unit_4/biological-engineering/2_Lesson_2/4_Project_4"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Back to lessons
+#   - name: "Unit 4 - Biological Engineering - Lesson 3"
+#     label: "Unit 4 - Biological Engineering - Lesson 3"
+#     folder: "content/4_Unit_4/biological-engineering/3_Lesson_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #####
+#   # chemical engineering
+#   - name: "Unit 4 - Chemical Engineering - Lesson 1"
+#     label: "Unit 4 - Chemical Engineering - Lesson 1"
+#     folder: "content/4_Unit_4/chemical-engineering/1_Lesson_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Chemical Engineering - Lesson 2"
+#     label: "Unit 4 - Chemical Engineering - Lesson 2"
+#     folder: "content/4_Unit_4/chemical-engineering/2_Lesson_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Projects
+#   - name: "Unit 4 - Chemical Engineering - Lesson 2 - Project 1"
+#     label: "Unit 4 - Chemical Engineering - Lesson 2 - Project 1"
+#     folder: "content/4_Unit_4/chemical-engineering/2_Lesson_2/1_Project_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Chemical Engineering - Lesson 2 - Project 2"
+#     label: "Unit 4 - Chemical Engineering - Lesson 2 - Project 2"
+#     folder: "content/4_Unit_4/chemical-engineering/2_Lesson_2/2_Project_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Chemical Engineering - Lesson 2 - Project 3"
+#     label: "Unit 4 - Chemical Engineering - Lesson 2 - Project 3"
+#     folder: "content/4_Unit_4/chemical-engineering/2_Lesson_2/3_Project_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Chemical Engineering - Lesson 2 - Project 4"
+#     label: "Unit 4 - Chemical Engineering - Lesson 2 - Project 4"
+#     folder: "content/4_Unit_4/chemical-engineering/2_Lesson_2/4_Project_4"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Back to lessons
+#   - name: "Unit 4 - Chemical Engineering - Lesson 3"
+#     label: "Unit 4 - Chemical Engineering - Lesson 3"
+#     folder: "content/4_Unit_4/chemical-engineering/3_Lesson_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #####
+#   # civil engineering
+#   - name: "Unit 4 - Civil Engineering - Lesson 1"
+#     label: "Unit 4 - Civil Engineering - Lesson 1"
+#     folder: "content/4_Unit_4/civil-engineering/1_Lesson_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Civil Engineering - Lesson 2"
+#     label: "Unit 4 - Civil Engineering - Lesson 2"
+#     folder: "content/4_Unit_4/civil-engineering/2_Lesson_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Projects
+#   - name: "Unit 4 - Civil Engineering - Lesson 2 - Project 1"
+#     label: "Unit 4 - Civil Engineering - Lesson 2 - Project 1"
+#     folder: "content/4_Unit_4/civil-engineering/2_Lesson_2/1_Project_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Civil Engineering - Lesson 2 - Project 2"
+#     label: "Unit 4 - Civil Engineering - Lesson 2 - Project 2"
+#     folder: "content/4_Unit_4/civil-engineering/2_Lesson_2/2_Project_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Civil Engineering - Lesson 2 - Project 3"
+#     label: "Unit 4 - Civil Engineering - Lesson 2 - Project 3"
+#     folder: "content/4_Unit_4/civil-engineering/2_Lesson_2/3_Project_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Civil Engineering - Lesson 2 - Project 4"
+#     label: "Unit 4 - Civil Engineering - Lesson 2 - Project 4"
+#     folder: "content/4_Unit_4/civil-engineering/2_Lesson_2/4_Project_4"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Back to lessons
+#   - name: "Unit 4 - Civil Engineering - Lesson 3"
+#     label: "Unit 4 - Civil Engineering - Lesson 3"
+#     folder: "content/4_Unit_4/civil-engineering/3_Lesson_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #####
+#   # computer science
+#   - name: "Unit 4 - Computer Science - Lesson 1"
+#     label: "Unit 4 - Computer Science - Lesson 1"
+#     folder: "content/4_Unit_4/computer-science/1_Lesson_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Computer Science - Lesson 2"
+#     label: "Unit 4 - Computer Science - Lesson 2"
+#     folder: "content/4_Unit_4/computer-science/2_Lesson_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Projects
+#   - name: "Unit 4 - Computer Science - Lesson 2 - Project 1"
+#     label: "Unit 4 - Computer Science - Lesson 2 - Project 1"
+#     folder: "content/4_Unit_4/computer-science/2_Lesson_2/1_Project_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Computer Science - Lesson 2 - Project 2"
+#     label: "Unit 4 - Computer Science - Lesson 2 - Project 2"
+#     folder: "content/4_Unit_4/computer-science/2_Lesson_2/2_Project_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Computer Science - Lesson 2 - Project 3"
+#     label: "Unit 4 - Computer Science - Lesson 2 - Project 3"
+#     folder: "content/4_Unit_4/computer-science/2_Lesson_2/3_Project_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Back to lessons
+#   - name: "Unit 4 - Computer Science - Lesson 3"
+#     label: "Unit 4 - Computer Science - Lesson 3"
+#     folder: "content/4_Unit_4/computer-science/3_Lesson_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #####
+#   # construction management
+#   - name: "Unit 4 - Construction Management - Lesson 1"
+#     label: "Unit 4 - Construction Management - Lesson 1"
+#     folder: "content/4_Unit_4/construction-management/1_Lesson_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Construction Management - Lesson 2"
+#     label: "Unit 4 - Construction Management - Lesson 2"
+#     folder: "content/4_Unit_4/construction-management/2_Lesson_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Projects
+#   - name: "Unit 4 - Construction Management - Lesson 2 - Project 1"
+#     label: "Unit 4 - Construction Management - Lesson 2 - Project 1"
+#     folder: "content/4_Unit_4/construction-management/2_Lesson_2/1_Project_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Construction Management - Lesson 2 - Project 2"
+#     label: "Unit 4 - Construction Management - Lesson 2 - Project 2"
+#     folder: "content/4_Unit_4/construction-management/2_Lesson_2/2_Project_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Construction Management - Lesson 2 - Project 3"
+#     label: "Unit 4 - Construction Management - Lesson 2 - Project 3"
+#     folder: "content/4_Unit_4/construction-management/2_Lesson_2/3_Project_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Construction Management - Lesson 2 - Project 4"
+#     label: "Unit 4 - Construction Management - Lesson 2 - Project 4"
+#     folder: "content/4_Unit_4/construction-management/2_Lesson_2/4_Project_4"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Back to lessons
+#   - name: "Unit 4 - Construction Management - Lesson 3"
+#     label: "Unit 4 - Construction Management - Lesson 3"
+#     folder: "content/4_Unit_4/construction-management/3_Lesson_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #####
+#   # electrical and computer engineering
+#   - name: "Unit 4 - Electrical and Computer Engineering - Lesson 1"
+#     label: "Unit 4 - Electrical and Computer Engineering - Lesson 1"
+#     folder: "content/4_Unit_4/electrical-and-computer-engineering/1_Lesson_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Electrical and Computer Engineering - Lesson 2"
+#     label: "Unit 4 - Electrical and Computer Engineering - Lesson 2"
+#     folder: "content/4_Unit_4/electrical-and-computer-engineering/2_Lesson_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Projects
+#   - name: "Unit 4 - Electrical and Computer Engineering - Lesson 2 - Project 1"
+#     label: "Unit 4 - Electrical and Computer Engineering - Lesson 2 - Project 1"
+#     folder: "content/4_Unit_4/electrical-and-computer-engineering/2_Lesson_2/1_Project_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Electrical and Computer Engineering - Lesson 2 - Project 2"
+#     label: "Unit 4 - Electrical and Computer Engineering - Lesson 2 - Project 2"
+#     folder: "content/4_Unit_4/electrical-and-computer-engineering/2_Lesson_2/2_Project_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Electrical and Computer Engineering - Lesson 2 - Project 3"
+#     label: "Unit 4 - Electrical and Computer Engineering - Lesson 2 - Project 3"
+#     folder: "content/4_Unit_4/electrical-and-computer-engineering/2_Lesson_2/3_Project_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Back to lessons
+#   - name: "Unit 4 - Electrical and Computer Engineering - Lesson 3"
+#     label: "Unit 4 - Electrical and Computer Engineering - Lesson 3"
+#     folder: "content/4_Unit_4/electrical-and-computer-engineering/3_Lesson_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #####
+#   # environmental engineering
+#   - name: "Unit 4 - Environmental Engineering - Lesson 1"
+#     label: "Unit 4 - Environmental Engineering - Lesson 1"
+#     folder: "content/4_Unit_4/environmental-engineering/1_Lesson_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Environmental Engineering - Lesson 2"
+#     label: "Unit 4 - Environmental Engineering - Lesson 2"
+#     folder: "content/4_Unit_4/environmental-engineering/2_Lesson_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Projects
+#   - name: "Unit 4 - Environmental Engineering - Lesson 2 - Project 1"
+#     label: "Unit 4 - Environmental Engineering - Lesson 2 - Project 1"
+#     folder: "content/4_Unit_4/environmental-engineering/2_Lesson_2/1_Project_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Environmental Engineering - Lesson 2 - Project 2"
+#     label: "Unit 4 - Environmental Engineering - Lesson 2 - Project 2"
+#     folder: "content/4_Unit_4/environmental-engineering/2_Lesson_2/2_Project_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Environmental Engineering - Lesson 2 - Project 3"
+#     label: "Unit 4 - Environmental Engineering - Lesson 2 - Project 3"
+#     folder: "content/4_Unit_4/environmental-engineering/2_Lesson_2/3_Project_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Environmental Engineering - Lesson 2 - Project 4"
+#     label: "Unit 4 - Environmental Engineering - Lesson 2 - Project 4"
+#     folder: "content/4_Unit_4/environmental-engineering/2_Lesson_2/4_Project_4"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Back to lessons
+#   - name: "Unit 4 - Environmental Engineering - Lesson 3"
+#     label: "Unit 4 - Environmental Engineering - Lesson 3"
+#     folder: "content/4_Unit_4/environmental-engineering/3_Lesson_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #####
+#   # industrial engineering
+#   - name: "Unit 4 - Industrial Engineering - Lesson 1"
+#     label: "Unit 4 - Industrial Engineering - Lesson 1"
+#     folder: "content/4_Unit_4/industrial-engineering/1_Lesson_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Industrial Engineering - Lesson 2"
+#     label: "Unit 4 - Industrial Engineering - Lesson 2"
+#     folder: "content/4_Unit_4/industrial-engineering/2_Lesson_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Projects
+#   - name: "Unit 4 - Industrial Engineering - Lesson 2 - Project 1"
+#     label: "Unit 4 - Industrial Engineering - Lesson 2 - Project 1"
+#     folder: "content/4_Unit_4/industrial-engineering/2_Lesson_2/1_Project_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Industrial Engineering - Lesson 2 - Project 2"
+#     label: "Unit 4 - Industrial Engineering - Lesson 2 - Project 2"
+#     folder: "content/4_Unit_4/industrial-engineering/2_Lesson_2/2_Project_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Industrial Engineering - Lesson 2 - Project 3"
+#     label: "Unit 4 - Industrial Engineering - Lesson 2 - Project 3"
+#     folder: "content/4_Unit_4/industrial-engineering/2_Lesson_2/3_Project_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Industrial Engineering - Lesson 2 - Project 4"
+#     label: "Unit 4 - Industrial Engineering - Lesson 2 - Project 4"
+#     folder: "content/4_Unit_4/industrial-engineering/2_Lesson_2/4_Project_4"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Industrial Engineering - Lesson 2 - Project 5"
+#     label: "Unit 4 - Industrial Engineering - Lesson 2 - Project 5"
+#     folder: "content/4_Unit_4/industrial-engineering/2_Lesson_2/5_Project_5"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Industrial Engineering - Lesson 2 - Project 6"
+#     label: "Unit 4 - Industrial Engineering - Lesson 2 - Project 6"
+#     folder: "content/4_Unit_4/industrial-engineering/2_Lesson_2/6_Project_6"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Back to lessons
+#   - name: "Unit 4 - Industrial Engineering - Lesson 3"
+#     label: "Unit 4 - Industrial Engineering - Lesson 3"
+#     folder: "content/4_Unit_4/industrial-engineering/3_Lesson_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #####
+#   # mechanical engineering
+#   - name: "Unit 4 - Mechanical Engineering - Lesson 1"
+#     label: "Unit 4 - Mechanical Engineering - Lesson 1"
+#     folder: "content/4_Unit_4/mechanical-engineering/1_Lesson_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Mechanical Engineering - Lesson 2"
+#     label: "Unit 4 - Mechanical Engineering - Lesson 2"
+#     folder: "content/4_Unit_4/mechanical-engineering/2_Lesson_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Projects
+#   - name: "Unit 4 - Mechanical Engineering - Lesson 2 - Project 1"
+#     label: "Unit 4 - Mechanical Engineering - Lesson 2 - Project 1"
+#     folder: "content/4_Unit_4/mechanical-engineering/2_Lesson_2/1_Project_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Mechanical Engineering - Lesson 2 - Project 2"
+#     label: "Unit 4 - Mechanical Engineering - Lesson 2 - Project 2"
+#     folder: "content/4_Unit_4/mechanical-engineering/2_Lesson_2/2_Project_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Mechanical Engineering - Lesson 2 - Project 3"
+#     label: "Unit 4 - Mechanical Engineering - Lesson 2 - Project 3"
+#     folder: "content/4_Unit_4/mechanical-engineering/2_Lesson_2/3_Project_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Mechanical Engineering - Lesson 2 - Project 4"
+#     label: "Unit 4 - Mechanical Engineering - Lesson 2 - Project 4"
+#     folder: "content/4_Unit_4/mechanical-engineering/2_Lesson_2/4_Project_4"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Back to lessons
+#   - name: "Unit 4 - Mechanical Engineering - Lesson 3"
+#     label: "Unit 4 - Mechanical Engineering - Lesson 3"
+#     folder: "content/4_Unit_4/mechanical-engineering/3_Lesson_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #####
+#   # petroleum engineering
+#   - name: "Unit 4 - Petroleum Engineering - Lesson 1"
+#     label: "Unit 4 - Petroleum Engineering - Lesson 1"
+#     folder: "content/4_Unit_4/petroleum-engineering/1_Lesson_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Petroleum Engineering - Lesson 2"
+#     label: "Unit 4 - Petroleum Engineering - Lesson 2"
+#     folder: "content/4_Unit_4/petroleum-engineering/2_Lesson_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Projects
+#   - name: "Unit 4 - Petroleum Engineering - Lesson 2 - Project 1"
+#     label: "Unit 4 - Petroleum Engineering - Lesson 2 - Project 1"
+#     folder: "content/4_Unit_4/petroleum-engineering/2_Lesson_2/1_Project_1"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Petroleum Engineering - Lesson 2 - Project 2"
+#     label: "Unit 4 - Petroleum Engineering - Lesson 2 - Project 2"
+#     folder: "content/4_Unit_4/petroleum-engineering/2_Lesson_2/2_Project_2"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#   - name: "Unit 4 - Petroleum Engineering - Lesson 2 - Project 3"
+#     label: "Unit 4 - Petroleum Engineering - Lesson 2 - Project 3"
+#     folder: "content/4_Unit_4/petroleum-engineering/2_Lesson_2/3_Project_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+
+#   #Back to lessons
+#   - name: "Unit 4 - Petroleum Engineering - Lesson 3"
+#     label: "Unit 4 - Petroleum Engineering - Lesson 3"
+#     folder: "content/4_Unit_4/petroleum-engineering/3_Lesson_3"
+#     create: true
+#     fields:
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Order", name: "weight", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}

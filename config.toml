@@ -1,0 +1,28 @@
+baseURL = "/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "Hugo Learn Documentation"
+theme = "hugo-pathways-theme"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+[params]
+  editURL = "https://github.com/lsu-ddem/pathways-site"
+  description = "Educational material for Pre-Engineering"
+  author = "Tate Carson"
+  showVisitedLinks = true
+  themeVariant = "blue"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "Educational material for Pre-Engineering"
+weight = 1
+languageName = "English"
+
+
+
+
