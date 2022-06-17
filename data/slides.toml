@@ -1,0 +1,19 @@
+forloop = '''
+
+* The syntax for a for loop contains four major parts:
+
+```js
+for (statement 1; statement 2; statement 3) {
+  code block to be executed
+}
+```
+
+which you can also label as:
+
+```js
+for (iterator; condition; increment) {
+  code block to be executed
+}
+```
+
+'''
